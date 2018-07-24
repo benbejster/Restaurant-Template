@@ -8,14 +8,12 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class HomePageViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        self.view.backgroundColor = UIColor.blue.withAlphaComponent(0.5)
+        self.view.backgroundColor = .red
     }
-
 
 }
 

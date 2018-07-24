@@ -8,22 +8,28 @@
 
 /* Begin PBXBuildFile section */
 		5D03609A21069A6A0057CFED /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D03609921069A6A0057CFED /* AppDelegate.swift */; };
-		5D03609C21069A6A0057CFED /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D03609B21069A6A0057CFED /* ViewController.swift */; };
+		5D03609C21069A6A0057CFED /* HomePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D03609B21069A6A0057CFED /* HomePageViewController.swift */; };
 		5D03609F21069A6A0057CFED /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5D03609D21069A6A0057CFED /* Main.storyboard */; };
 		5D0360A221069A6A0057CFED /* Restaurant_Template.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5D0360A021069A6A0057CFED /* Restaurant_Template.xcdatamodeld */; };
 		5D0360A421069A6C0057CFED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5D0360A321069A6C0057CFED /* Assets.xcassets */; };
 		5D0360A721069A6C0057CFED /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5D0360A521069A6C0057CFED /* LaunchScreen.storyboard */; };
+		5D3BB2B121079C320077E80B /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D3BB2B021079C320077E80B /* MenuViewController.swift */; };
+		5D3BB2B421079DFC0077E80B /* OrderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D3BB2B321079DFC0077E80B /* OrderViewController.swift */; };
+		5D3BB2BA21079FB10077E80B /* MoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D3BB2B921079FB10077E80B /* MoreViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		5D03609621069A6A0057CFED /* Restaurant-Template.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Restaurant-Template.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5D03609921069A6A0057CFED /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		5D03609B21069A6A0057CFED /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		5D03609B21069A6A0057CFED /* HomePageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageViewController.swift; sourceTree = "<group>"; };
 		5D03609E21069A6A0057CFED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5D0360A121069A6A0057CFED /* Restaurant_Template.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Restaurant_Template.xcdatamodel; sourceTree = "<group>"; };
 		5D0360A321069A6C0057CFED /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5D0360A621069A6C0057CFED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5D0360A821069A6C0057CFED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5D3BB2B021079C320077E80B /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		5D3BB2B321079DFC0077E80B /* OrderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderViewController.swift; sourceTree = "<group>"; };
+		5D3BB2B921079FB10077E80B /* MoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +62,50 @@
 		5D03609821069A6A0057CFED /* Restaurant-Template */ = {
 			isa = PBXGroup;
 			children = (
-				5D03609921069A6A0057CFED /* AppDelegate.swift */,
-				5D03609B21069A6A0057CFED /* ViewController.swift */,
 				5D03609D21069A6A0057CFED /* Main.storyboard */,
+				5D3BB2B221079DC40077E80B /* Home Page */,
+				5D3BB2B521079E120077E80B /* Menu Page */,
+				5D3BB2B621079E1C0077E80B /* Order Page */,
+				5D3BB2B821079F9C0077E80B /* More Page */,
+				5D03609921069A6A0057CFED /* AppDelegate.swift */,
 				5D0360A321069A6C0057CFED /* Assets.xcassets */,
 				5D0360A521069A6C0057CFED /* LaunchScreen.storyboard */,
 				5D0360A821069A6C0057CFED /* Info.plist */,
 				5D0360A021069A6A0057CFED /* Restaurant_Template.xcdatamodeld */,
 			);
 			path = "Restaurant-Template";
+			sourceTree = "<group>";
+		};
+		5D3BB2B221079DC40077E80B /* Home Page */ = {
+			isa = PBXGroup;
+			children = (
+				5D03609B21069A6A0057CFED /* HomePageViewController.swift */,
+			);
+			path = "Home Page";
+			sourceTree = "<group>";
+		};
+		5D3BB2B521079E120077E80B /* Menu Page */ = {
+			isa = PBXGroup;
+			children = (
+				5D3BB2B021079C320077E80B /* MenuViewController.swift */,
+			);
+			path = "Menu Page";
+			sourceTree = "<group>";
+		};
+		5D3BB2B621079E1C0077E80B /* Order Page */ = {
+			isa = PBXGroup;
+			children = (
+				5D3BB2B321079DFC0077E80B /* OrderViewController.swift */,
+			);
+			path = "Order Page";
+			sourceTree = "<group>";
+		};
+		5D3BB2B821079F9C0077E80B /* More Page */ = {
+			isa = PBXGroup;
+			children = (
+				5D3BB2B921079FB10077E80B /* MoreViewController.swift */,
+			);
+			path = "More Page";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,8 +180,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				5D0360A221069A6A0057CFED /* Restaurant_Template.xcdatamodeld in Sources */,
-				5D03609C21069A6A0057CFED /* ViewController.swift in Sources */,
+				5D3BB2B421079DFC0077E80B /* OrderViewController.swift in Sources */,
+				5D03609C21069A6A0057CFED /* HomePageViewController.swift in Sources */,
+				5D3BB2BA21079FB10077E80B /* MoreViewController.swift in Sources */,
 				5D03609A21069A6A0057CFED /* AppDelegate.swift in Sources */,
+				5D3BB2B121079C320077E80B /* MenuViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
